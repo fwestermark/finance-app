@@ -2,8 +2,8 @@
 FROM nginx:latest
 
 # The default nginx.conf DOES NOT include /etc/nginx/sites-enabled/*.conf
-COPY nginx.conf /etc/nginx/
-COPY finance-app.conf /etc/nginx/sites-available/
+COPY nginx/nginx.conf /etc/nginx/
+COPY nginx/finance-app.conf /etc/nginx/sites-available/
 
 # Use separate web-server file
 RUN mkdir -p /etc/nginx/sites-enabled/ \
@@ -11,6 +11,6 @@ RUN mkdir -p /etc/nginx/sites-enabled/ \
     && rm /etc/nginx/conf.d/default.conf
 
 # COPY Webserver files
-COPY *.html /usr/share/nginx/html/
-COPY *.css /usr/share/nginx/html/
+COPY html/*.html /usr/share/nginx/html/
+COPY html/*.css /usr/share/nginx/html/
 
