@@ -4,9 +4,12 @@ This docker image provides a simple web page with a login. The login accepts wha
 ## Purpose
 The purpose of the image is to provide a simple web-front to which to provide a demo page for command injections (CMDi).
 
+## Built With
+The image is built using nginx docker image (nginx:latest)
+
 
 ## Installation
-clone this repository and edit to your liking or pull from docker-hub.
+Clone this repository and edit to your liking or pull from docker-hub.
 
 
 ### Using docker
@@ -25,4 +28,7 @@ finance-app:
 
 ```
 
+
+### License
+Distributed under the MIT License. See LICENSE for more information.
 
