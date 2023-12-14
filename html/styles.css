@@ -279,6 +279,12 @@ body {
 
 .salarytable {
   background: #ffffff;
-  font-family: "courier new";
-  font-size: 12px;
+  font-family: "Courier New";
+  font-size: 14px;
+}
+
+th {
+  text-align: left;
+  width: 200px;
+  font-size: 16px;
 }
