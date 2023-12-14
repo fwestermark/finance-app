@@ -276,3 +276,9 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.salarytable {
+  background: #ffffff;
+  font-family: "courier new";
+  font-size: 12px;
+}
